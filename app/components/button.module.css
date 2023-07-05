@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .default {
+    @apply bg-greenpale text-white;
+  }
+  .default:hover {
+    @apply bg-green-700;
+  }
+
+  .primary {
+    @apply bg-blue-500 text-white;
+  }
+  .primary:hover {
+    @apply bg-blue-600 text-white;
+  }
+
+  .success {
+    @apply bg-green-500 text-white;
+  }
+  .success:hover {
+    @apply bg-green-600 text-white;
+  }
+
+  .info {
+    @apply bg-blue-500 text-white;
+  }
+  .info:hover {
+    @apply bg-blue-600 text-white;
+  }
+
+  .warning {
+    @apply bg-yellow-400 text-white;
+  }
+  .warning:hover {
+    @apply bg-yellow-500 text-white;
+  }
+
+  .danger {
+    @apply bg-red-500 text-white;
+  }
+  .danger:hover {
+    @apply bg-red-600 text-white;
+  }
+
+  .dark {
+    @apply bg-gray-800 text-white;
+  }
+  .dark:hover {
+    @apply bg-gray-900 text-white;
+  }
+
+  .disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+  .disabled:hover {
+    @apply opacity-50 cursor-not-allowed;
+  }
+}
