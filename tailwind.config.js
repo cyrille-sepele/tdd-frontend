@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         neueLeiden: ['var(--font-NeueLeiden)'],
+        neuleidenBold: ['var(--font-NeueLeidenBold)'],
       },
       colors: {
         secondaryBG: '#28272C',

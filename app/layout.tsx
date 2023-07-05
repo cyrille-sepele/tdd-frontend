@@ -11,16 +11,22 @@ const neueLeiden = localFont({
   variable: '--font-NeueLeiden',
 });
 
+const neueLeidenbold = localFont({
+  src: '../public/fonts/NeueLeiden-Bold.woff2',
+  variable: '--font-NeueLeidenBold',
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${neueLeiden.variable}`}>
-      <body className="bg-lightGreen font-neueLeiden relative w-full h-screen">
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${neueLeiden.variable} ${neueLeidenbold.variable}`}
+    >
+      <body className="bg-lightGreen font-neueLeiden">{children}</body>
     </html>
   );
 }

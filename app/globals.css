@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 @import url('./components/button.module.css');
+.title {
+  @apply font-neuleidenBold text-lg tracking-wider;
+}
