@@ -1,5 +1,7 @@
 'use client';
 
+import { motion } from 'framer-motion';
+
 import React from 'react';
 
 interface Props {
@@ -19,17 +21,19 @@ const Button: React.FC<Props> = ({
   ...rest
 }) => {
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1 }}
+      whileTap={{ scale: 0.9 }}
       onClick={onClick}
       {...rest}
       disabled={disabled}
       className={
-        `btn w-full justify-center  transition ease-out hover:shadow-lg px-6 py-2 text-white  rounded flex  space-y-2 ${variant} ` +
+        `btn  justify-center  transition ease-out hover:shadow-lg px-6 py-2 text-white  rounded flex  space-y-2 ${variant} ` +
         (disabled ? ' disabled' : '')
       }
     >
       {title}
-    </button>
+    </motion.button>
   );
 };
 

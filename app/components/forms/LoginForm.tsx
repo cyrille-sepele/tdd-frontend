@@ -37,7 +37,7 @@ const LoginForm = () => {
   );
   return (
     <>
-      <form className="bg-white max-w-md flex flex-col items-center py-8 px-16 rounded-lg">
+      <form className="bg-white max-w-md flex flex-col items-center py-8 px-8 md:px-16 rounded-lg">
         <div className="p-2 w-10 h-10 bg-gray-800 rounded">
           <Image src={TDDLogo} alt="Logo" />
         </div>

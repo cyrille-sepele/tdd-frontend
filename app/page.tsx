@@ -1,13 +1,26 @@
+'use client';
+
 import Image from 'next/image';
+import { useState } from 'react';
 import Logo from '../public/icons/TDD-logo-form.svg';
 import Folders from '../public/icons/folders.svg';
 import Button from './components/Button';
-import NavBar from './components/NavBar';
+import Modal from './components/Modal';
+import LoginForm from './components/forms/LoginForm';
 
 const Home = () => {
+  const [modal, setModal] = useState(false);
+
   return (
     <div>
-      <NavBar />
+      {modal ? (
+        <Modal>
+          <LoginForm />
+        </Modal>
+      ) : (
+        ''
+      )}
+
       <>
         <nav className="mt-9">
           <div className="Tdd-logo flex justify-center items-center">
@@ -25,7 +38,7 @@ const Home = () => {
               Welcome to TDD, the utility of conversion for a greater perfomance
             </p>
             <div className="flex pt-4 z-20">
-              <Button title="Login" />
+              <Button title="Login" onClick={() => setModal(true)} />
             </div>
             <div className="mt-8 ">
               <Image src={Folders} alt="" />

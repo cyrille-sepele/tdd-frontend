@@ -4,10 +4,10 @@
 
 @layer components {
   .default {
-    @apply bg-greenpale text-white;
+    @apply bg-greenpale w-full text-white;
   }
   .default:hover {
-    @apply bg-green-700;
+    @apply bg-green-700 w-full;
   }
 
   .primary {
@@ -39,10 +39,10 @@
   }
 
   .danger {
-    @apply bg-red-500 text-white;
+    @apply bg-red-500 w-fit text-white;
   }
   .danger:hover {
-    @apply bg-red-600 text-white;
+    @apply bg-red-600 w-fit text-white;
   }
 
   .dark {

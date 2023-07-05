@@ -18,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${neueLeiden.variable}`}>
-      <body className="bg-lightGreen font-neueLeiden">{children}</body>
+      <body className="bg-lightGreen font-neueLeiden relative w-full h-screen">
+        {children}
+      </body>
     </html>
   );
 }

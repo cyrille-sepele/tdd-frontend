@@ -1,16 +1,16 @@
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
-import LoginForm from '../components/forms/LoginForm';
-import { companies } from '../context/companies';
 import FileUpload from './components/FileUpload';
 
 const page = () => {
   return (
     <>
       <NavBar />
-      <LoginForm />
-      <FileUpload />
-      <Footer companies={companies} />
+      <div className=" py-8  max-w-xl px-2 mx-auto h-[90vh] flex items-center justify-center">
+        <FileUpload />
+      </div>
+
+      <Footer _companies={undefined} />
     </>
   );
 };
